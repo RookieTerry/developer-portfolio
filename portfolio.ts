@@ -2,7 +2,7 @@ import emoji from "react-easy-emoji";
 import {
   EducationType,
   ExperienceType,
-  FeedbackType,
+  // FeedbackType,
   ProjectType,
   SkillsSectionType,
   SkillBarsType,
@@ -12,24 +12,24 @@ import {
 } from "./types/sections";
 
 export const greetings: GreetingsType = {
-  name: "Hanzla Tauqeer",
-  title: "Hi all, I'm Hanzla",
+  name: "Tianyu Zhang",
+  title: "Hi all, I'm Terry located in Dublin, Ireland",
   description:
-    "I'm a passionate Full Stack web developer with experience developing Full Stack web applications with Python, Django, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.",
+    "I'm a CS graduate at Trinity College Dublin, and I had experience developing Full Stack web applications with Python, Golang, React.js, and Cloud Technologies. I am strongly interested in learning new technologies and implementing them in my projects. I'm a self-motivated and hardworking individual who is always ready to learn new things and work in a team.",
   resumeLink: "#",
 };
 
 export const openSource = {
-  githubUserName: "1hanzla100",
+  githubUserName: "RookieTerry",
 };
 
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  email: "mailto:hanzla.tauqeer123@gmail.com",
-  linkedin: "https://www.linkedin.com/in/1hanzla100/",
-  github: "https://github.com/1hanzla100",
-  instagram: "https://www.instagram.com/__hanzla100",
+  email: "mailto:zhangt8@tcd.ie",
+  linkedin: "https://www.linkedin.com/in/tianyuzhang-cn/",
+  github: "https://github.com/RookieTerry",
+  // instagram: "https://www.instagram.com/__hanzla100",
   // facebook: 'https://www.facebook.com/1hanzla100',
   // twitter: 'https://twitter.com/1hanzla100',
 };
@@ -42,9 +42,8 @@ export const skillsSection: SkillsSectionType = {
       title: "Full Stack Development",
       lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
       skills: [
-        emoji("⚡ Building responsive Single-Page-Apps (SPA) & PWA in React.js"),
-        emoji("⚡ Building responsive static websites using Next.js"),
-        emoji("⚡ Building RESTful APIs in Django & Django REST Framework"),
+        emoji("⚡ Building responsive static websites using React.js and Vue.js"),
+        emoji("⚡ Building RESTful APIs in Python Flask & Java SpringBoot Framework"),
       ],
       softwareSkills: [
         {
@@ -52,8 +51,8 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: "logos:python",
         },
         {
-          skillName: "Django",
-          iconifyTag: "vscode-icons:file-type-django",
+          skillName: "Java",
+          iconifyTag: "logos:java",
         },
         {
           skillName: "JavaScript",
@@ -64,12 +63,8 @@ export const skillsSection: SkillsSectionType = {
           iconifyTag: "vscode-icons:file-type-reactjs",
         },
         {
-          skillName: "Nextjs",
-          iconifyTag: "vscode-icons:file-type-light-next",
-        },
-        {
-          skillName: "AWS",
-          iconifyTag: "logos:aws",
+          skillName: "Spring Framework",
+          iconifyTag: "logos:spring",
         },
         {
           skillName: "Heroku",
@@ -90,124 +85,128 @@ export const skillsSection: SkillsSectionType = {
 
 export const SkillBars: SkillBarsType[] = [
   {
-    Stack: "Frontend/Design", //Insert stack or technology you have experience in
-    progressPercentage: "85", //Insert relative proficiency in percentage
+    Stack: "English", //Insert stack or technology you have experience in
+    progressPercentage: "90", //Insert relative proficiency in percentage
   },
   {
-    Stack: "Backend",
-    progressPercentage: "90",
+    Stack: "Mandarin Chinese",
+    progressPercentage: "100",
   },
   {
     Stack: "Programming",
-    progressPercentage: "95",
+    progressPercentage: "85",
   },
 ];
 
 export const educationInfo: EducationType[] = [
   {
-    schoolName: "University of Central Punjab",
-    subHeader: "Bachelor of Science in Computer Science",
-    duration: "September 2017 - April 2020",
-    desc: "",
-    grade: "Grade A",
-    descBullets: [], // Array of Strings
+    schoolName: "Trinity College Dublin, The University of Dublin",
+    subHeader: "Master of Science in Computer Science",
+    duration: "September 2024 - Present",
+    desc: "Future Networks Systems strand",
+    grade: "Upper Second Class (Expected)",
+    descBullets: ['Advanced Software Engineering', 'Distributed Systems', 'Internet of Things', 'Scalable Computing', 'Urban Computing'], // Array of Strings
+  },
+  {
+    schoolName: "Wuhan University of Science and Technology & Birmingham City University",
+    subHeader: "Bachelor of Engineering in Network Engineering",
+    duration: "September 2020 - July 2024",
+    desc: "Joint Degree Programme",
+    grade: "Upper Second Class",
+    descBullets: ['Computer Networks', 'Data Structure and Algorithm', 'Java EE Architecture', 'Python Programming', 'Routing & Network Switched Technology'], // Array of Strings
   },
 ];
 
 export const experience: ExperienceType[] = [
   {
-    role: "Django Developer",
-    company: "Meganos Software",
-    companyLogo: "/img/icons/common/meganos.png",
-    date: "Aug 2022 - Present",
-    desc: "I crafted backends for diverse web apps, APIs, and WebSockets in e-commerce, podcasts, and property management. Managed server upkeep, deployments on Linux, Heroku, and AWS S3. Implemented PyTest for automated unit and integration testing, slashing 4 hours of manual testing each sprint, fortifying a dependable and flawless code foundation.",
+    role: "Network Engineer Intern",
+    company: "FiberHome Communication (Wuhan Headquarter)",
+    companyLogo: "/img/icons/common/FiberHome.jpg",
+    date: "Oct 2023 - Nov 2023",
+    descBullets: [
+      "Deployed a state-of-the-art SPN network in an elastic cloud environment using 5G technologies and Flexible Ethernet, configuring 5G base stations, routers supporting the ISIS protocol, and MPLS VPN.",
+      "Implemented a modern enterprise network utilizing FiberHome\'s CITRANS 650 series hardware, ensuring seamless functionality.",
+    ]
   },
   {
-    role: "Full Stack Developer",
-    company: "Duseca Software",
-    companyLogo: "/img/icons/common/duseca_software_logo.jpeg",
-    date: "Jan 2022 - Sept 2023",
-    desc: "Crafted robust mobile application backends employing Django, Python, and REST APIs. Leveraged Django REST Framework, PostgreSQL, AWS, Firebase, Stripe, and WebSocket for efficient development. Collaborated across teams to surpass client expectations. Designed intuitive UIs, empowering clients to effortlessly manage their applications with a visually captivating interface.",
-    // descBullets: [
-    // 	"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-    // 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    // ],
-  },
-  {
-    role: "Full Stack Developer",
-    company: "ZRTechnologies",
-    companyLogo: "/img/icons/common/zrtech.jpeg",
-    date: "Aug 2022 - Jun 2023",
-    desc: "Crafting diverse web applications, I've elevated functionality and user engagement. Spearheaded Visual Portfolio, leveraging AI for captivating presentations from parsed text. Proficiently set up and optimized applications on Linux servers, guaranteeing smooth scalability and top-notch performance for seamless user experiences.",
-  },
-  {
-    role: "Backend Developer",
-    company: "Bleed-AI",
-    companyLogo: "/img/icons/common/bleedAI.jpg",
-    date: "Sept 2021 - Oct 2021",
-    desc: "As a Django developer at Bleed AI, I integrated a computer vision AI model to process YouTube URLs on a website. I used Django Channels and Websockets to show real-time processing and implemented threading to run multiple instances of the AI model. I also used jQuery for UI rendering and deployed the website on a Heroku server.",
+    role: "Binary Security Researcher Intern",
+    company: "Institute of Software, Chinese Academy of Sciences",
+    companyLogo: "/img/icons/common/ISCAS.jpg",
+    date: "Jun 2022 - Sept 2022",
+    descBullets: [
+    	"Leveraged AFL (American Fuzzy Lop) for white-box and black-box testing of PC-side applications.",
+    	"Conducted white-box testing on open-source applications' source code to uncover buffer overflow vulnerabilities using AFL's genetic detection algorithm.",
+      "Employed IDA Pro for disassembly and modification, conducting black-box testing on 64-bit exe programs in QEMU and numb modes.",
+      "Delivered comprehensive application security assessments and recommendations to enhance software security."
+    ],
   },
 ];
 
 export const projects: ProjectType[] = [
   {
-    name: "developer-portfolio",
-    desc: "Software Developer Portfolio Template built with react.js and next.js bootstrap that helps you showcase your work and skills as a software developer.",
-    github: "https://github.com/1hanzla100/developer-portfolio",
-    link: "https://developer-portfolio-1hanzla100.vercel.app/",
+    name: "Location-Based Weather Condition Map",
+    desc: "Developed a weather information API using Python and Node.js, with data stored in Google Firebase. Utilized CORS middleware for cross-origin resource sharing. Created a dynamic frontend deployed on Vercel, using ECharts for interactive data visualization and Material UI for a modern user interface. Integrated RESTful APIs to display current and historical weather conditions of the user's location as interactive graphs. Deployed backend services on Heroku for scalability and high availability. Conducted API testing and debugging with Postman, utilizing log analysis for error resolution and application stability. Designed and implemented backend APIs, managing deployment environments to ensure seamless application performance.",
+    link: "https://weather-condition-map.vercel.app",
+    github: "https://gitlab.scss.tcd.ie/zhangt8/weatherconditionmap"
   },
   {
-    name: "Giebo",
-    desc: "A Podcast Platform where creators can easily publish and sell their podcasts, and users can purchase with Handcash BitcoinSV, the future of fast and secure transactions.",
-    link: "https://gibeo.io/",
+    name: "A Technology Intelligence Knowledge Organization System Based on Knowledge Graph",
+    desc: "Engaged in a state-of-the-art project under a lab affiliated with China Institute of Scientific and Technological Information, I spearheaded the back-end development of a sophisticated Intelligence Knowledge Organization System leveraging a knowledge graph, advanced NLP techniques, and bespoke web scraping tools. Initially, I engineered a robust multi-thread web crawler to methodically extract critical datasets from scholarly websites across finance,legal,tourism and medical fields, persisting the data into a structured MySQL database. Subsequently, I crafted RESTful APIs in Java and Python frameworks for group members working on front-end development, facilitating seamless data retrieval for front-end integration, thereby ensuring a robust and responsive back-end architecture for the system.",
+    link: "#",
   },
   {
-    name: "O Mejor Oferta",
-    desc: "O Mejor Oferta is a mobile marketplace for buying and selling items nearby, helping users find deals on things they want and make money from items they no longer need.",
-    link: "https://play.google.com/store/apps/details?id=com.duseca.mejor_oferta",
+    name: "Malicious Data Flow Control System within Software Defined Network",
+    desc: "Drove the creation of a sophisticated malicious data flow control system within the context of the floodlight controller framework. This endeavour comprised two critical modules: the link flow detection and data flow detection decision-making components. The link traffic detection module routinely gathered statistical data from switch edge ports, monitored traffic patterns, and adjusted system states in response to predefined thresholds. The data flow detection and decision-making modules maintained IP address pairs, skilfully processing incoming data packets and rendering decisions based on the system's status.",
+    github: "https://github.com/RookieTerry/SDN-FlowControl",
   },
   {
-    name: "Hooligan Culture",
-    desc: "A Ecommerce Platform, where shopping meets the future! With HandCash BitcoinSV integration, you can authenticate and purchase products with ease and confidence.",
-    link: "https://hooliganculture.com/",
+    name: "A Simple FTP Software",
+    desc: "Implemented a client-server architecture using Python sockets module and FTP protocol. Deployed authentication and encryption for secure user login. Developed file upload/download functionalities with real-time progress tracking. Enabled Unix-like command support for file operations on the server. Designed a server dashboard to display user status and file transmission progress.",
+    github: "https://github.com/RookieTerry/SimpleFTPSoftware",
+  },
+  {
+    name: "My Personal Blog",
+    desc: "It is a blog website that I built using Hexo. I have written blogs about my projects, past experiences, and some tutorials. I have also integrated a comment section using Twikoo and Mailgun. The website is deployed on Netlify and specially optimized for Mainland China.",
+    link: "https://hackerterry.netlify.app",
   },
 ];
 
-export const feedbacks: FeedbackType[] = [
-  {
-    name: "Syed Jamal",
-    role: "Frontend Developer at Meganos Software",
-    feedback:
-      "You were a wonderful addition to our team, alhumdulillah. I'm quite impressed with your abilities and professional practices. You approach problems from a unique perspective and always ask the right question. Finding a good teammate like Hanzla is extremely difficult. He has contributed to the growth of our organization and continues to do so. May Allah bless you with everything you desire.",
-  },
-  {
-    name: "Wajahat Malek",
-    role: "CEO at Duseca Software",
-    feedback:
-      "Hanzla has a deep understanding of web development technologies and is adept at using them to build scalable, robust, and secure web applications. He has worked on various projects, ranging from small-scale to large-scale, and has shown his ability to work collaboratively with others while maintaining a high level of productivity and quality. Hanzla is a pleasure to work with, and I have no doubt that he will be an asset to any team or organization. I highly recommend Hanzla for any Full Stack Django, React.js, or Blockchain development projects, and I wish him all the best in his future endeavors.",
-  },
-  {
-    name: "Zaid Zaffar",
-    role: "CEO at ZR Technologies",
-    feedback:
-      "Very skilled at what he does and has an in depth knowledge of Django and he's always ready to handle any challenges thrown at him. He's been a valuable member of my team and i look forward to working with him in the years to come",
-  },
-];
+// export const feedbacks: FeedbackType[] = [
+//   {
+//     name: "Syed Jamal",
+//     role: "Frontend Developer at Meganos Software",
+//     feedback:
+//       "You were a wonderful addition to our team, alhumdulillah. I'm quite impressed with your abilities and professional practices. You approach problems from a unique perspective and always ask the right question. Finding a good teammate like Hanzla is extremely difficult. He has contributed to the growth of our organization and continues to do so. May Allah bless you with everything you desire.",
+//   },
+//   {
+//     name: "Wajahat Malek",
+//     role: "CEO at Duseca Software",
+//     feedback:
+//       "Hanzla has a deep understanding of web development technologies and is adept at using them to build scalable, robust, and secure web applications. He has worked on various projects, ranging from small-scale to large-scale, and has shown his ability to work collaboratively with others while maintaining a high level of productivity and quality. Hanzla is a pleasure to work with, and I have no doubt that he will be an asset to any team or organization. I highly recommend Hanzla for any Full Stack Django, React.js, or Blockchain development projects, and I wish him all the best in his future endeavors.",
+//   },
+//   {
+//     name: "Zaid Zaffar",
+//     role: "CEO at ZR Technologies",
+//     feedback:
+//       "Very skilled at what he does and has an in depth knowledge of Django and he's always ready to handle any challenges thrown at him. He's been a valuable member of my team and i look forward to working with him in the years to come",
+//   },
+// ];
 
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: "Hanzla Tauqeer",
+  title: "Tianyu Zhang's Portfolio",
   description: greetings.description,
-  author: "Hanzla Tauqeer",
-  image: "https://avatars.githubusercontent.com/u/59178380?v=4",
-  url: "https://developer-portfolio-1hanzla100.vercel.app",
+  author: "Tianyu Zhang",
+  image: "https://avatars.githubusercontent.com/u/77920425?v=4",
+  url: "https://hackerterry.netlify.app",
   keywords: [
-    "Hanzla",
-    "Hanzla Tauqeer",
-    "@1hanzla100",
-    "1hanzla100",
+    "Tianyu",
+    "Terry",
+    "Tianyu Zhang",
+    "@RookieTerry",
+    "RookieTerry",
     "Portfolio",
-    "Hanzla Portfolio ",
-    "Hanzla Tauqeer Portfolio",
+    "Tianyu Portfolio",
+    "Tianyu Zhang Portfolio",
   ],
 };

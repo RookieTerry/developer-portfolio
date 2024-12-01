@@ -67,7 +67,7 @@ export type ExperienceType = {
   company: string;
   companyLogo: string;
   date: string;
-  desc: string;
+  desc?: string;
   descBullets?: string[];
 };
 
@@ -82,8 +82,8 @@ export type ProjectType = {
 
 // * FEEDBACK SECTION
 
-export type FeedbackType = {
-  name: string;
-  role: string;
-  feedback: string;
-};
+// export type FeedbackType = {
+//   name: string;
+//   role: string;
+//   feedback: string;
+// };
