@@ -198,7 +198,7 @@ export const seoData: SEODataType = {
   description: greetings.description,
   author: "Tianyu Zhang",
   image: "https://avatars.githubusercontent.com/u/77920425?v=4",
-  url: "https://hackerterry.netlify.app",
+  url: "https://www.scss.tcd.ie/~zhangt8",
   keywords: [
     "Tianyu",
     "Terry",
